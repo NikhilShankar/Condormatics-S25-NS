@@ -58,3 +58,10 @@ resource "aws_lb_target_group_attachment" "niks_lb_target_group_attachment" {
   target_id        = aws_instance.ns_nginx1.id
   port             = 80
 }
+
+#Group Attachments
+resource "aws_lb_target_group_attachment" "niks_lb_target_group_attachment_2" {
+  target_group_arn = aws_lb_target_group.niks_lb_target_group.arn
+  target_id        = aws_instance.ns_nginx2.id
+  port             = 80
+}
