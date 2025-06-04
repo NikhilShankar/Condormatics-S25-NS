@@ -5,7 +5,7 @@ resource "aws_lb" "niks_nginx_lb" {
   load_balancer_type = "application"
 
   security_groups = [aws_security_group.ns_lb_security_group.id]
-  subnets = [aws_subnet.ns_public_subnet.id]
+  subnets = [aws_subnet.ns_public_subnet.id, aws_subnet.ns_public_subnet_2.id]
 
   tags = {
     Name = "9026254_NIKHILSHANKAR_LAB4"
