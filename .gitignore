@@ -2,3 +2,7 @@
 .terraform.lock.hcl
 Lab5-LoadBalancer/.terraform/*
 Lab4/.terraform/*
+Lab5-LoadBalancer/.terraform/*
+Lab6-S3/.terraform/*
+Lab7/.terraform/*
+Lab8/.terraform/*
